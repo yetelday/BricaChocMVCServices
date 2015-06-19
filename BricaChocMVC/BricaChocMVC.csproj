@@ -162,6 +162,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProduitController.cs" />
     <Compile Include="Controllers\TvaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -233,6 +234,7 @@
     <Content Include="Views\Tva\Create.cshtml" />
     <Content Include="Views\Tva\Edit.cshtml" />
     <Content Include="Views\Tva\Delete.cshtml" />
+    <Content Include="Views\Produit\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
