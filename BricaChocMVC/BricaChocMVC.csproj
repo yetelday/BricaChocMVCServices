@@ -235,6 +235,7 @@
     <Content Include="Views\Tva\Edit.cshtml" />
     <Content Include="Views\Tva\Delete.cshtml" />
     <Content Include="Views\Produit\Index.cshtml" />
+    <Content Include="Views\Produit\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -255,6 +256,9 @@
       <Project>{4ffdb303-f0a1-4c72-b311-920c629ff405}</Project>
       <Name>BricachocBo</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

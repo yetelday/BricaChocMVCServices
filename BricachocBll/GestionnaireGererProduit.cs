@@ -14,12 +14,12 @@ namespace BricachocBll
         TvaManager tvaMgr;
         FamilleManager familleMgr;
 
-        //public GestionnaireGererProduit()
-        //{
-        //    produitMgr = new ProduitManager(new ProduitDao());
-        //    tvaMgr = new TvaManager(new TvaDao());
-        //    familleMgr = new FamilleManager(new FamilleDao());
-        //}
+        public GestionnaireGererProduit()
+        {
+            produitMgr = new ProduitManager(new ProduitDao());
+            tvaMgr = new TvaManager(new TvaDao());
+            familleMgr = new FamilleManager(new FamilleDao());
+        }
 
         public ICollection<Produit> ChargerLesProduits()
         {
