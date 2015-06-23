@@ -1,0 +1,60 @@
+﻿@model BricachocBo.Produit
+
+<div>
+    <h4>Produit</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cpu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cpu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrixHt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrixHt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Generic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Generic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodeFamille)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodeFamille)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrixTtc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrixTtc)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Cpu }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

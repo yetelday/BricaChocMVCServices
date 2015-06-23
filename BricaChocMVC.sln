@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BricachocDal", "BricachocDa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreationBase", "CreationBase\CreationBase.csproj", "{EACCC604-7202-4291-95DF-4B0D1B49C11A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BricachocMvcBis", "BricachocMvcBis\BricachocMvcBis.csproj", "{022F7AE2-C7AA-4DDD-99AA-5196085350C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{EACCC604-7202-4291-95DF-4B0D1B49C11A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EACCC604-7202-4291-95DF-4B0D1B49C11A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EACCC604-7202-4291-95DF-4B0D1B49C11A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{022F7AE2-C7AA-4DDD-99AA-5196085350C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{022F7AE2-C7AA-4DDD-99AA-5196085350C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{022F7AE2-C7AA-4DDD-99AA-5196085350C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{022F7AE2-C7AA-4DDD-99AA-5196085350C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
