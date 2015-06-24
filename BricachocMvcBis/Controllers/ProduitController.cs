@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using BricachocBll;
 using BricachocBo;
+using BricachocMvcBis.ServiceArticle;
 
 namespace BricaChocMVC.Controllers
 {
@@ -14,7 +15,8 @@ namespace BricaChocMVC.Controllers
         // GET: Produit
         public ActionResult Index()
         {
-            GestionnaireGererProduit GesProd = new GestionnaireGererProduit();
+            ServiceArticleClient GesProd = new ServiceArticleClient();
+            //GestionnaireGererProduit GesProd = new GestionnaireGererProduit();
             ICollection<Produit> CollecProd = new Collection<Produit>();
             CollecProd = GesProd.ChargerLesProduits();
             return View(CollecProd);

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BricachocBo" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BricachocBo" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfProduit">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Produit" nillable="true" type="tns:Produit" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProduit" nillable="true" type="tns:ArrayOfProduit" />
+  <xs:complexType name="Produit">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodeFamille" type="xs:int" />
+      <xs:element minOccurs="0" name="Cpu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Generic" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LaFamille" nillable="true" type="tns:Famille" />
+      <xs:element minOccurs="0" name="PrixHt" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PrixTtc" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Produit" nillable="true" type="tns:Produit" />
+  <xs:complexType name="Famille">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" type="xs:int" />
+      <xs:element minOccurs="0" name="CodeFamille" type="xs:int" />
+      <xs:element minOccurs="0" name="LaTva" nillable="true" type="tns:Tva" />
+      <xs:element minOccurs="0" name="LibelleFamille" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TxTva" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Famille" nillable="true" type="tns:Famille" />
+  <xs:complexType name="Tva">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" type="xs:int" />
+      <xs:element minOccurs="0" name="Taux" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Tva" nillable="true" type="tns:Tva" />
+  <xs:complexType name="ArrayOfFamille">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Famille" nillable="true" type="tns:Famille" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFamille" nillable="true" type="tns:ArrayOfFamille" />
+</xs:schema>
